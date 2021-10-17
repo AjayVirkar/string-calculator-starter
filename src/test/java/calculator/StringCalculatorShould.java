@@ -46,4 +46,10 @@ class StringCalculatorShould {
     	thrown.expect(IllegalArgumentException.class);
     	assertEquals(4, stringCalculator.add("-2,2"));
     }
+    
+    @Test
+    void string_ignore_numbers_greater_than_1000() {
+    	StringCalculator stringCalculator = new StringCalculator();
+    	assertEquals(600, stringCalculator.add("1500,300,300"));
+    }
 }
