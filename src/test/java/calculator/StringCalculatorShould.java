@@ -27,4 +27,10 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
     	assertEquals(18, stringCalculator.add("5,6,7"));
     }
+    
+    @Test
+    void string_with_two_number_with_newLine_should_return_number_as_sum() throws Exception {
+    	StringCalculator stringCalculator = new StringCalculator();
+    	assertEquals(2, stringCalculator.add("1\n1"));
+    }
 }
